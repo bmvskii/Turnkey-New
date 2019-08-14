@@ -4,45 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meetings</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Turn Key Lender</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper container">
-        <div class="events events--empty">
-            <span class="events__text">Мероприятия отстутствуют</span>
-            <select class="events__select" >
-                <option class="events__option" disabled selected hidden>Дата</option>
-            </select>
+    <header class="header container">
+        <img src="./src/assets/logo.svg" alt="turnkey logo" class="header__logo">
+    </header>
+    <div class="hero">
+        <div class="hero-wrapper container">
+            <h1 class="hero__title">Put Loans Management
+                on Autopilot</h1>
+            <p class="hero__description">All-in-one digital lending solutions for banks, lenders and retail
+                organizations to automate all steps from loan origination to servicing.</p>
+            <button class="button hero__button">Get a Free Personalized Demo</button>
         </div>
-
-        <form class="form" id="creational_form">
-            <h2 class="form__title">Добавить мероприятие</h2>
-            <div class="form__labels">
-                <label for="title" class="label">
-                    <span class="label__text">Название</span>
-                    <input name="title" id="title" type="text" class="label__input">
-                    <span class="error"></span>
-                </label>
-                <label for="date" class="label">
-                    <span class="label__text">Дата</span>
-                    <input name="date" id="date" type="date" class="label__input">
-                    <span class="error"></span>
-                </label>
-                <label for="start_time" class="label">
-                    <span class="label__text">Время начала</span>
-                    <input name="start_time" id="start_time" type="time" class="label__input">
-                    <span class="error"></span>
-                </label>
-                <label for="end_time" class="label">
-                    <span class="label__text">Время конца</span>
-                    <input name="end_time" id="end_time" type="time" class="label__input">
-                    <span class="error"></span>
-                </label>
+    </div>
+    <div class="showcases-wrapper container">
+        <h2 class="showcases__title">How TurnKey Lender can help?</h2>
+        <p class="showcases__descr">Manage all your customer loans and payments in one place. Reduce paperwork, manual
+            processes and decision time.</p>
+        <div class="showcases">
+            <div class="showcase">
+                <img src="./src/assets/speedometer.svg" alt="speedometer icon" class="showcase__logo">
+                <h3 class="showcase__title">Close loans faster</h3>
+                <p class="showcase__descr">Avg loan approval time with TurnKey Lender is only 0.5 min</p>
             </div>
-            <button class="form__button button button--orange">Добавить</button>
+            <div class="showcase">
+                <img src="./src/assets/cost.svg" alt="operational cost icon" class="showcase__logo">
+                <h3 class="showcase__title">Reduce operational cost</h3>
+                <p class="showcase__descr">Our customers report their portfolio profitability grows 49% on avg after
+                    implementing TurnKey Lender</p>
+            </div>
+            <div class="showcase">
+                <img src="./src/assets/grow-client.svg" alt="grow client ltv logo" class="showcase__logo">
+                <h3 class="showcase__title">Grow Client LTV</h3>
+                <p class="showcase__descr">Automate upsells and cross sell new products to increase client lifetime
+                    value by 67%</p>
+            </div>
+        </div>
+    </div>
+    <div class="partners-wrapper container">
+        <h2 class="partners__title">TurnKey Lender powers lending companies of all sizes from startups to large
+            enterprises across 40+ countries</h2>
+        <div class="partners">
+            <div class="partner">
+                <img src="./src/assets/hsbc-logo.svg" alt="hsbc logo" class="partner__logo">
+            </div>
+            <div class="partner">
+                <img src="./src/assets/eny.png" alt="eny logo" class="partner__logo">
+            </div>
+            <div class="partner">
+                <img src="./src/assets/betterfi.png" alt="betterfi logo" class="partner__logo">
+            </div>
+            <div class="partner">
+                <img src="./src/assets/thrive.png" alt="thrive logo" class="partner__logo">
+            </div>
+            <div class="partner">
+                <img src="./src/assets/rhb-logo.svg" alt="rhb logo" class="partner__logo">
+            </div>
+            <div class="partner">
+                <img src="./src/assets/ecovolt.png" alt="ecovolt logo" class="partner__logo">
+            </div>
+        </div>
+    </div>
+    <div class="testis"></div>
+    <div class="contact-us container">
+        <h2 class="contact-us__title">Want to transform your lending business?</h2>
+        <p class="contact-us__descr">Request a demo to see how TurnKey Lender can help. </p <form action=""
+            class="contact-us__form">
+        <input type="text" class="contact-us__input">
+        <input type="text" class="contact-us__input">
+        <input type="text" class="contact-us__input">
+        <input type="text" class="contact-us__input">
+        <input type="text" class="contact-us__input">
+        <button class="contact-us__button">Get a Free Personalized Demo </button>
         </form>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer-col">
+                <img src="./src/assets/logo.svg" alt="turnkey logo" class="footer__logo">
+            </div>
+            <div class="footer-col">
+                <p>TurnKey Lender is a cloud-based Lending Software for evaluating borrowers, decision-making support,
+                    and online-lending process automation.</p>
+            </div>
+            <div class="footer-col"></div>
+            <div class="footer-col"></div>
+        </div>
     </div>
 </body>
 
