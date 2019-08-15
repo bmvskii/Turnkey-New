@@ -1,0 +1,48 @@
+.contact-us
+    background-color: lighten($gray,40%)
+    padding: 100px 0 150px
+    
+    &__title
+        text-align: center
+        margin-bottom: 5px
+        
+    &__descr
+        text-align: center
+        margin-bottom: 55px
+
+    &__wrapper
+        display: flex
+        flex-direction: column
+        background-color: $white
+
+        padding: 40px 35px
+        border-radius: $border-radius
+
+        width: 57%
+
+    &__input
+        width: calc(50% - 20px)
+        border-radius: $button-border-radius
+        border: 1px solid $gray
+
+        padding: 15px
+
+        &:not(:last-child)
+            margin: 0 10px 40px
+
+        &-group
+            display: flex
+            flex-wrap: wrap
+
+            margin: 0 -10px
+
+        &:last-child
+            width: 100%
+            margin-bottom: 35px
+
+    &__button
+
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center

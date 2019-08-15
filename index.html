@@ -13,7 +13,7 @@
 
 <body>
     <header class="header container">
-        <img src="./src/assets/logo.svg" alt="turnkey logo" class="header__logo">
+        <img src="<%= require('./src/assets/logo.svg') %>" alt="turnkey logo" class="header__logo">
     </header>
     <div class="hero">
         <div class="hero-wrapper container">
@@ -30,18 +30,19 @@
             processes and decision time.</p>
         <div class="showcases">
             <div class="showcase">
-                <img src="./src/assets/speedometer.svg" alt="speedometer icon" class="showcase__logo">
+                <img src="<%= require('./src/assets/speedometer.svg') %>" alt="speedometer icon" class="showcase__logo">
                 <h3 class="showcase__title">Close loans faster</h3>
                 <p class="showcase__descr">Avg loan approval time with TurnKey Lender is only 0.5 min</p>
             </div>
             <div class="showcase">
-                <img src="./src/assets/cost.svg" alt="operational cost icon" class="showcase__logo">
+                <img src="<%= require('./src/assets/cost.svg') %>" alt="operational cost icon" class="showcase__logo">
                 <h3 class="showcase__title">Reduce operational cost</h3>
                 <p class="showcase__descr">Our customers report their portfolio profitability grows 49% on avg after
                     implementing TurnKey Lender</p>
             </div>
             <div class="showcase">
-                <img src="./src/assets/grow-client.svg" alt="grow client ltv logo" class="showcase__logo">
+                <img src="<%= require('./src/assets/grow-client.svg') %>" alt="grow client ltv logo"
+                    class="showcase__logo">
                 <h3 class="showcase__title">Grow Client LTV</h3>
                 <p class="showcase__descr">Automate upsells and cross sell new products to increase client lifetime
                     value by 67%</p>
@@ -53,49 +54,53 @@
             enterprises across 40+ countries</h2>
         <div class="partners">
             <div class="partner">
-                <img src="./src/assets/hsbc-logo.svg" alt="hsbc logo" class="partner__logo">
+                <img src="<%= require('./src/assets/hsbc-logo.svg') %>" alt="hsbc logo" class="partner__logo">
             </div>
             <div class="partner">
-                <img src="./src/assets/eny.png" alt="eny logo" class="partner__logo">
+                <img src="<%= require('./src/assets/eny.png') %>" alt="eny logo" class="partner__logo">
             </div>
             <div class="partner">
-                <img src="./src/assets/betterfi.png" alt="betterfi logo" class="partner__logo">
+                <img src="<%= require('./src/assets/betterfi.png') %>" alt="betterfi logo" class="partner__logo">
             </div>
             <div class="partner">
-                <img src="./src/assets/thrive.png" alt="thrive logo" class="partner__logo">
+                <img src="<%= require('./src/assets/thrive.png') %>" alt="thrive logo" class="partner__logo">
             </div>
             <div class="partner">
-                <img src="./src/assets/rhb-logo.svg" alt="rhb logo" class="partner__logo">
+                <img src="<%= require('./src/assets/rhb-logo.svg') %>" alt="rhb logo" class="partner__logo">
             </div>
             <div class="partner">
-                <img src="./src/assets/ecovolt.png" alt="ecovolt logo" class="partner__logo">
+                <img src="<%= require('./src/assets/ecovolt.png') %>" alt="ecovolt logo" class="partner__logo">
             </div>
         </div>
     </div>
     <div class="testis"></div>
-    <div class="contact-us container">
-        <h2 class="contact-us__title">Want to transform your lending business?</h2>
-        <p class="contact-us__descr">Request a demo to see how TurnKey Lender can help. </p <form action=""
-            class="contact-us__form">
-        <input type="text" class="contact-us__input">
-        <input type="text" class="contact-us__input">
-        <input type="text" class="contact-us__input">
-        <input type="text" class="contact-us__input">
-        <input type="text" class="contact-us__input">
-        <button class="contact-us__button">Get a Free Personalized Demo </button>
-        </form>
+    <div class="contact-us">
+        <div class="contact-us__wrapper container">
+            <h2 class="contact-us__title">Want to transform your lending business?</h2>
+            <p class="contact-us__descr">Request a demo to see how TurnKey Lender can help. </p>
+            <form action="" class="contact-us__form">
+                <div class="contact-us__input-group">
+                    <input type="text" class="contact-us__input">
+                    <input type="text" class="contact-us__input">
+                    <input type="text" class="contact-us__input">
+                    <input type="text" class="contact-us__input">
+                    <input type="text" class="contact-us__input">
+                </div>
+                <button class="button contact-us__button">Get a Free Personalized Demo </button>
+            </form>
+        </div>
     </div>
     <div class="footer">
         <div class="footer-wrapper container">
-            <div class="footer-col">
-                <img src="./src/assets/logo.svg" alt="turnkey logo" class="footer__logo">
+            <div class="footer__col">
+                <img src="<%= require('./src/assets/logo.svg') %>" alt="turnkey logo" class="footer__logo">
             </div>
-            <div class="footer-col">
+            <div class="footer__col">
                 <p>TurnKey Lender is a cloud-based Lending Software for evaluating borrowers, decision-making support,
                     and online-lending process automation.</p>
             </div>
-            <div class="footer-col"></div>
-            <div class="footer-col"></div>
+            <div class="footer__col"></div>
+            <div class="footer__col"></div>
         </div>
     </div>
 </body>

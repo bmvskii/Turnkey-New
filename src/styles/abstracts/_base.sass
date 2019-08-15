@@ -1,14 +1,16 @@
-*
-    box-sizing: border-box
+*,
+*::after,
+*::before
+    box-sizing: inherit
     
 html
+    font-size: 62.5%
+    box-sizing: border-box
 
 body
-    font: 16px $sourcesanspro-font
+    font: 1.6rem/1 $sourcesanspro-font
     overflow-x: hidden
-
-    // min-height: 100vh
-
+    min-height: 100vh
 
 code 
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
@@ -29,8 +31,6 @@ button
     border: none
     background: none
     outline: none
-
-
 
 .wrapper
     display: flex
