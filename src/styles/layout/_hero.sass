@@ -1,7 +1,7 @@
 .hero
     padding: 190px 0 115px
     
-    background: url(../assets/hero-bg.svg) no-repeat center center
+    background: url(../assets/hero-bg.svg) no-repeat bottom
     background-size: cover
     position: relative
 
@@ -11,6 +11,9 @@
         content: ""
 
         position: absolute
+
+        @media screen and (max-width: $small)
+            display: none
 
     &::after
         background: url(../assets/top-right-shape.svg) no-repeat center center   
@@ -32,11 +35,15 @@
         align-items: center
 
     &__title
+        text-align: center
         margin-bottom: 20px
 
     &__description
         text-align: center
         margin-bottom: 50px
         width: 45.3125%
+
+        @media screen and (max-width: $small)
+            width: 100%
 
     &__button

@@ -5,6 +5,12 @@
 
     width: calc(100% / 3)
 
+    @media screen and (max-width: $small)
+        width: 100%
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
     &__title
     &__descr
         text-align: center
@@ -16,12 +22,23 @@
         display: flex
         justify-content: space-between
 
+        @media screen and (max-width: $small)
+            flex-direction: column
+
         &__title
             margin-bottom: 10px
+
+            @media screen and (max-width: $small)
+                margin-bottom: 5px
+
         &__descr
             width: 47.578125%
             margin-bottom: 40px
             text-align: center
+
+            @media screen and (max-width: $small)
+                margin-bottom: 20px
+                width: 100%
             
         &-wrapper
             display: flex

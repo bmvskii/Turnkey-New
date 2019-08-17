@@ -1,17 +1,38 @@
 .footer
     background-image: linear-gradient(to top, rgba(20, 30, 48, 0.35), rgba(36, 59, 85, 0))
     padding: 25px 0
-    border: 1px solid red
+    border-top: 1px solid red
 
     &-wrapper
         display: flex
         align-items: center
-        
+
+        @media screen and (max-width: $small)
+            flex-direction: column
+
+    &__descr
+        font-size: $fs14
+
     &__col
         width: 25%
 
-        & p
-            font-size: $fs14
+        @media screen and (max-width: $small)
+            // display: flex
+            justify-content: center
+            text-align: center
+            width: 100%
+
+        &--small
+            width: 15%
+            
+            @media screen and (max-width: $small)
+                width: 100%
+
+        &--wide
+            width: 40%
+
+            @media screen and (max-width: $small)
+                width: 100%
 
     &__phone,
     &__address

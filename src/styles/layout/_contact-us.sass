@@ -1,6 +1,9 @@
 .contact-us    
     background-image: linear-gradient(to top, rgba(20, 30, 48, 0.35), rgba(36, 59, 85, 0))
     padding: 100px 0 150px
+
+    @media screen and (max-width: $small)
+        padding: 50px 15px 80px
     
     &__title
         text-align: center
@@ -9,6 +12,10 @@
     &__descr
         text-align: center
         margin-bottom: 55px
+
+        @media screen and (max-width: $small)
+            margin-bottom: 30px
+            font-size: $fs18
 
     &__wrapper
         display: flex
@@ -19,23 +26,38 @@
         border-radius: $border-radius
 
         width: 57%
-
         box-shadow: $box-shadow
+
+        @media screen and (max-width: $medium)
+            width: 80%
+
+        @media screen and (max-width: $small)
+            width: 100%
+            padding: 20px 15px
 
     &__label
         width: calc(50% - 20px)
+        position: relative
         
+        @media screen and (max-width: $small)
+            width: 100%
+            
         &:last-child
             width: 100%
 
-        .label__text
+        &-text
             color: $gray
             font-size: $fs14
             
-            position: relative
-            right: -40px
-            bottom: -7px
+            position: absolute
+            left: 40px
+            top: -7px
             z-index: 3
+
+            transition: $transition
+
+            // Background layout to provide exact design
+            // compared with origin design
 
             &:before
                 display: block
@@ -53,7 +75,7 @@
                 background-color: lighten($light-gray, 10%)
         
     &__input
-        width: 100%
+        width: calc(100% - 20px)
         border-radius: $button-border-radius
         border: 1px solid $light-gray
         background-color: lighten($light-gray, 10%)
@@ -61,27 +83,36 @@
         position: relative
         padding: 15px
 
-        &::placeholder
-            position: absolute
-            top: -20px
-            left: 15px
-
         &:not(:last-child)
             margin: 0 10px 40px
 
+        &:last-child
+            margin: 0 10px 35px
+
+        @media screen and (max-width: $small)
+            &:not(:last-child)
+                margin: 0 10px 20px
+
+            &:last-child
+                margin: 0 10px 15px
+        
         &-group
             display: flex
             flex-wrap: wrap
             justify-content: space-between
 
             margin: 0 -10px
+            width: 100%
 
-        &:last-child
-            margin: 0 10px 35px
+    &__input:focus + &__label-text
+        top: -20px
 
-    &__button
+        &:before
+            background-color: rgba(0,0,0,0)
 
     &__form
         display: flex
         flex-direction: column
         align-items: center
+        
+        width: 100%
