@@ -9,6 +9,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Spectral:400i,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 
 <body>
@@ -32,12 +35,14 @@
             <div class="showcase">
                 <img src="<%= require('./src/assets/speedometer.svg') %>" alt="speedometer icon" class="showcase__logo">
                 <h3 class="showcase__title">Close loans faster</h3>
-                <p class="showcase__descr">Avg loan approval time with TurnKey Lender is only 0.5 min</p>
+                <p class="showcase__descr">Avg loan approval time with TurnKey Lender is only <span class="red">0.5
+                        min</span> </p>
             </div>
             <div class="showcase">
                 <img src="<%= require('./src/assets/cost.svg') %>" alt="operational cost icon" class="showcase__logo">
                 <h3 class="showcase__title">Reduce operational cost</h3>
-                <p class="showcase__descr">Our customers report their portfolio profitability grows 49% on avg after
+                <p class="showcase__descr">Our customers report their portfolio profitability grows <span
+                        class="red">49%</span> on avg after
                     implementing TurnKey Lender</p>
             </div>
             <div class="showcase">
@@ -45,7 +50,7 @@
                     class="showcase__logo">
                 <h3 class="showcase__title">Grow Client LTV</h3>
                 <p class="showcase__descr">Automate upsells and cross sell new products to increase client lifetime
-                    value by 67%</p>
+                    value by <span class="red">67%</span> </p>
             </div>
         </div>
     </div>
@@ -73,18 +78,83 @@
             </div>
         </div>
     </div>
-    <div class="testis"></div>
+    <div class="testis-wrapper">
+        <div class="testimonials-wrapper container">
+            <div class="testimonials">
+                <div class="testis">
+                    <p class="testis__descr">The key factors for choosing to work with TurnKey Lender is their expertise
+                        and
+                        dedication to our needs and requirements. Having the peace of mind our partner will deliver
+                        quality
+                        is important to us.</p>
+                    <div class="testis__client-info">
+                        <img src="<%= require('./src/assets/ecovolt.png') %>" alt="Company logo"
+                            class="testis__company-logo">
+                        <div class="testis__company-info">
+                            <span class="testis__employee">Lee Hui Theng Clara</span>
+                            <span class="testis__rank">Head Technology & Operation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testis">
+                    <p class="testis__descr">The key factors for choosing to work with TurnKey Lender is their expertise
+                        and
+                        dedication to our needs and requirements. Having the peace of mind our partner will deliver
+                        quality
+                        is important to us.</p>
+                    <div class="testis__client-info">
+                        <img src="<%= require('./src/assets/ecovolt.png') %>" alt="Company logo"
+                            class="testis__company-logo">
+                        <div class="testis__company-info">
+                            <span class="testis__employee">Lee Hui Theng Clara</span>
+                            <span class="testis__rank">Head Technology & Operation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testis">
+                    <p class="testis__descr">The key factors for choosing to work with TurnKey Lender is their expertise
+                        and
+                        dedication to our needs and requirements. Having the peace of mind our partner will deliver
+                        quality
+                        is important to us.</p>
+                    <div class="testis__client-info">
+                        <img src="<%= require('./src/assets/ecovolt.png') %>" alt="Company logo"
+                            class="testis__company-logo">
+                        <div class="testis__company-info">
+                            <span class="testis__employee">Lee Hui Theng Clara</span>
+                            <span class="testis__rank">Head Technology & Operation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="contact-us">
         <div class="contact-us__wrapper container">
             <h2 class="contact-us__title">Want to transform your lending business?</h2>
             <p class="contact-us__descr">Request a demo to see how TurnKey Lender can help. </p>
             <form action="" class="contact-us__form">
                 <div class="contact-us__input-group">
-                    <input type="text" class="contact-us__input">
-                    <input type="text" class="contact-us__input">
-                    <input type="text" class="contact-us__input">
-                    <input type="text" class="contact-us__input">
-                    <input type="text" class="contact-us__input">
+                    <label for="first_name" class="contact-us__label label">
+                        <span class="label__text">First name *</span>
+                        <input type="text" name="first_name" id="first_name" class="contact-us__input">
+                    </label>
+                    <label for="last_name" class="contact-us__label label">
+                        <span class="label__text">Last name *</span>
+                        <input type="text" name="last_name" id="last_name" class="contact-us__input">
+                    </label>
+                    <label for="email" class="contact-us__label label">
+                        <span class="label__text">Business email *</span>
+                        <input type="text" name="email" id="email" class="contact-us__input">
+                    </label>
+                    <label for="phone_number" class="contact-us__label label">
+                        <span class="label__text">Phone number *</span>
+                        <input type="text" name="phone_number" id="phone_number" class="contact-us__input">
+                    </label>
+                    <label for="company_name" class="contact-us__label label">
+                        <span class="label__text">Company name *</span>
+                        <input type="text" name="company_name" id="company_name" class="contact-us__input">
+                    </label>
                 </div>
                 <button class="button contact-us__button">Get a Free Personalized Demo </button>
             </form>
@@ -99,10 +169,41 @@
                 <p>TurnKey Lender is a cloud-based Lending Software for evaluating borrowers, decision-making support,
                     and online-lending process automation.</p>
             </div>
-            <div class="footer__col"></div>
-            <div class="footer__col"></div>
+            <div class="footer__col">
+                <div class="footer__address-wrapper">
+                    <img src="<%= require('./src/assets/map-point.svg') %>" alt="Map point icon" class="footer__icon">
+                    <span class="footer__address">901 S MoPac Expressway, Austin, TX 78746 USA</span>
+                </div>
+                <div class="footer__phone-wrapper">
+                    <img src="<%= require('./src/assets/phone.svg') %>" alt="Phone icon" class="footer__icon">
+                    <a href="tel:+18885090280" class="footer__phone">+1 888 509 0280</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__address-wrapper">
+                    <img src="<%= require('./src/assets/map-point.svg') %>" alt="Map point icon" class="footer__icon">
+                    <span class="footer__address">160 Robinson Rd., #18-08, Singapore 068914</span>
+                </div>
+                <div class="footer__phone-wrapper">
+                    <img src="<%= require('./src/assets/phone.svg') %>" alt="Phone icon" class="footer__icon">
+                    <a href="tel:+6531593778" class="footer__phone">+65 315 937 78</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.testimonials').slick({
+                // fade: true,
+                easing: 'ease-in-out',
+                infinite: false,
+            });
+        });
+    </script>
 </body>
 
 </html>

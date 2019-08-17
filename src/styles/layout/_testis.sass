@@ -1,0 +1,60 @@
+.testi
+    &s
+        &-wrapper
+            background-color: lighten($gray, 50%)
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%)
+            border-bottom: 1px solid red
+
+        &__descr
+            margin-bottom: 35px
+            font-size: $fs28
+            font-style: italic
+            font-family: $spectral-font
+
+        &__client-info
+            display: flex
+            align-items: center
+
+        &__company
+            &-logo
+                display: inline-block
+                border-right: 1px solid red
+                padding: 15px 30px 15px 0
+                width: 170px
+                box-sizing: content-box
+
+            &-info
+                display: flex
+                flex-direction: column
+                
+                padding: 15px 0 15px 40px
+        
+        &__rank
+            font-weight: bold
+            font-size: $fs18
+
+        &__employee
+            display: inline-block
+            font-size: $fs18
+            margin-bottom: 5px
+            color: $gray
+    
+    &monials
+
+        &-wrapper
+            position: relative
+            padding: 70px 15px
+
+            &::before 
+                display: block
+                content: ""
+
+                position: absolute
+                top: -42.5px
+                left: 15px
+
+                width: 100px
+                height: 85px
+                
+                background: url(../assets/quotes.svg) no-repeat center center   
+                background-size: contain

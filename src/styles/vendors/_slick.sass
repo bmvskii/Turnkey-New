@@ -1,0 +1,56 @@
+.slick
+    &-list
+        width: 80%
+
+    &-arrow
+        position: absolute
+        right: 0
+        top: 0
+        left: unset
+
+        width: 40px
+        height: 14px
+
+        transform: none
+        transition: $transition
+
+        &:hover
+            opacity: 1
+            background-position: center center
+
+        &:before
+            content: ""
+
+    &-prev
+        right: 70px
+        
+        &,
+        &:focus,
+        &:active,
+        &:hover
+            background: url(../assets/arrow.svg) no-repeat center center   
+            transform: rotate(180deg)  
+
+        &:hover
+            transform: rotate(180deg) translateX(10px)
+
+        &.slick-disabled
+            background: url(../assets/arrow-disabled.svg) no-repeat center center
+            transform: rotate(360deg)
+            
+    &-next  
+        &,
+        &:focus,
+        &:active,
+        &:hover
+            background: url(../assets/arrow.svg) no-repeat center center
+        
+        &:hover
+            transform: translateX(10px)
+        
+        &.slick-disabled
+            background: url(../assets/arrow-disabled.svg) no-repeat center center
+            transform: rotate(180deg)
+
+            &:hover
+                transform: rotate(180deg) translateX(15px)

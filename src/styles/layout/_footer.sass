@@ -1,6 +1,7 @@
 .footer
     background-image: linear-gradient(to top, rgba(20, 30, 48, 0.35), rgba(36, 59, 85, 0))
     padding: 25px 0
+    border: 1px solid red
 
     &-wrapper
         display: flex
@@ -11,3 +12,17 @@
 
         & p
             font-size: $fs14
+
+    &__phone,
+    &__address
+        display: flex
+
+        &-wrapper
+            display: flex
+            align-items: center
+
+    &__address-wrapper
+        margin-bottom: 15px
+
+    &__icon
+        margin-right: 10px

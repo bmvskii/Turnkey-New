@@ -1,7 +1,30 @@
 .hero
-    padding: 100px 0 115px
+    padding: 190px 0 115px
     
-    background-color: lighten($gray,40%)
+    background: url(../assets/hero-bg.svg) no-repeat center center
+    background-size: cover
+    position: relative
+
+    &::after,
+    &::before
+        display: block
+        content: ""
+
+        position: absolute
+
+    &::after
+        background: url(../assets/top-right-shape.svg) no-repeat center center   
+        top: 0
+        right: 0 
+        width: 375px
+        height: 325px
+
+    &::before
+        background: url(../assets/left-bottom-shape.svg) no-repeat center center
+        bottom: 0
+        left: 0
+        width: 350px
+        height: 700px
 
     &-wrapper
         display: flex
@@ -14,5 +37,6 @@
     &__description
         text-align: center
         margin-bottom: 50px
+        width: 45.3125%
 
     &__button
