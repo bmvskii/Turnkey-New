@@ -9,14 +9,20 @@
         width: 100%
 
         &:not(:last-child)
-            margin-bottom: 20px
+            margin-bottom: 40px
 
     &__title
+        @media screen and (max-width: $small)
+            margin-top: 25px
+
     &__descr
         text-align: center
         font-size: $fs18
 
         width: 70%
+
+        @media screen and (max-width: $small)
+            margin-top: 5px
 
     &s
         display: flex
@@ -37,8 +43,9 @@
             text-align: center
 
             @media screen and (max-width: $small)
-                margin-bottom: 20px
+                padding: 0 15px
                 width: 100%
+                font-size: $fs20
             
         &-wrapper
             display: flex
@@ -47,3 +54,6 @@
             flex-direction: column
 
             padding: 107px 0 127px
+
+            @media screen and (max-width: $small)
+                padding: 56px 0 76px

@@ -1,9 +1,8 @@
 .contact-us    
-    background-image: linear-gradient(to top, rgba(20, 30, 48, 0.35), rgba(36, 59, 85, 0))
     padding: 100px 0 150px
 
     @media screen and (max-width: $small)
-        padding: 50px 15px 80px
+        padding: 20px 15px 80px
     
     &__title
         text-align: center
@@ -76,12 +75,14 @@
         
     &__input
         width: calc(100% - 20px)
+        position: relative
+
+        padding: 15px
         border-radius: $button-border-radius
         border: 1px solid $light-gray
-        background-color: lighten($light-gray, 10%)
 
-        position: relative
-        padding: 15px
+        background-color: lighten($light-gray, 10%)
+        transition: $transition
 
         &:not(:last-child)
             margin: 0 10px 40px
@@ -104,12 +105,26 @@
             margin: 0 -10px
             width: 100%
 
+        &.error
+            border-color: $red
+
     &__input:focus + &__label-text
         top: -20px
 
         &:before
             background-color: rgba(0,0,0,0)
 
+    label.error
+        position: absolute
+        bottom: 20px
+        left: 40px
+        font-size: $fs14
+        transition: $transition
+
+    &__input.error ~ &__label-text,
+    &__input.error ~ label.error 
+        color: $red
+    
     &__form
         display: flex
         flex-direction: column

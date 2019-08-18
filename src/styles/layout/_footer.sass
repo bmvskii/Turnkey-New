@@ -1,7 +1,6 @@
 .footer
-    background-image: linear-gradient(to top, rgba(20, 30, 48, 0.35), rgba(36, 59, 85, 0))
     padding: 25px 0
-    border-top: 1px solid red
+    border-top: 1px solid $light-gray
 
     &-wrapper
         display: flex
@@ -12,15 +11,12 @@
 
     &__descr
         font-size: $fs14
+        @media screen and (max-width: $small)
+            padding: 0 15px
 
     &__col
-        width: 25%
-
-        @media screen and (max-width: $small)
-            // display: flex
-            justify-content: center
-            text-align: center
-            width: 100%
+        width: calc(25% - 40px)
+        margin-right: 40px
 
         &--small
             width: 15%
@@ -33,6 +29,16 @@
 
             @media screen and (max-width: $small)
                 width: 100%
+        
+        @media screen and (max-width: $small)
+            // display: flex
+            justify-content: center
+            text-align: center
+            width: 100%
+            margin-right: 0
+
+            &:not(:last-child)
+                margin-bottom: 25px
 
     &__phone,
     &__address
@@ -42,8 +48,15 @@
             display: flex
             align-items: center
 
+            @media screen and (max-width: $small)
+                flex-direction: column
+
     &__address-wrapper
         margin-bottom: 15px
 
     &__icon
         margin-right: 10px
+
+        @media screen and (max-width: $small)
+            margin-right: 0
+            margin-bottom: 5px

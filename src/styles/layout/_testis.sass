@@ -1,9 +1,11 @@
 .testi
     &s
         &-wrapper
-            background-color: lighten($gray, 50%)
-            border-bottom: 1px solid red
+            border-bottom: 1px solid $light-gray
 
+            @media screen and (max-width: $small)
+                border-bottom: 0
+                
         &__descr
             margin-bottom: 35px
             
@@ -13,24 +15,40 @@
 
             @media screen and (max-width: $small)
                 text-align: center
-
+                font-size: $fs24
+                margin-bottom: 0
+                
         &__client-info
             display: flex
             align-items: center
 
+            @media screen and (max-width: $small)
+                flex-direction: column
+                align-items: center
+
         &__company
             &-logo
                 display: inline-block
-                border-right: 1px solid red
+                border-right: 1px solid $light-gray
                 padding: 15px 30px 15px 0
                 width: 170px
                 box-sizing: content-box
+
+                @media screen and (max-width: $small)
+                    border-right: 0
+                    padding: 0
+                    margin-top: 25px
 
             &-info
                 display: flex
                 flex-direction: column
                 
                 padding: 15px 0 15px 40px
+
+                @media screen and (max-width: $small)
+                    padding: 0
+                    align-items: center
+                    margin-top: 25px
         
         &__rank
             font-weight: bold
