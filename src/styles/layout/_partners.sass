@@ -4,7 +4,7 @@
     align-items: center
 
     width: calc(100% / 6 - 30px)
-    height: 160px    
+    height: 160px
     box-shadow: $box-shadow
 
     @media screen and (max-width: $medium)
@@ -13,6 +13,12 @@
     @media screen and (max-width: $small)
         width: calc(100% / 2 - 15px)
         margin: 15px 0
+
+    &__logo
+        height: 70px
+        max-width: 140px
+
+        object-fit: contain
 
     &s
         display: flex
@@ -29,7 +35,7 @@
             align-items: center
 
             padding-bottom: 165px
-    
+
         &__title
             text-align: center
             margin-bottom: 45px
