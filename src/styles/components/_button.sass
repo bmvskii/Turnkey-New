@@ -30,15 +30,14 @@
         width: 100%
         height: 100%
 
-        box-shadow: 0 0 0px 0px rgba($red, 1)
         z-index: -1
-
         border-radius: $button-border-radius * 2
+        box-shadow: 0 0 0px 0px rgba($red, 1)
 
-    &:hover::after
+    &:hover:after,
+    &:active:after
         transition: .3s all ease
-        box-shadow: inset 0 0 20px 10px rgba($red, 1)
+        box-shadow: 0 0 80px 1px rgba($red, 0)
 
-    &:active::after
         // transition: .3s all ease-in-out
         // box-shadow: inset 0 0 20px 10px rgba($red, 1)
