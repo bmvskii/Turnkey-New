@@ -1,36 +1,28 @@
+$showcases-top-padding: 107px
+
 .hero
     padding: 190px 0 115px
     position: relative
-    
-    background: url(../assets/hero-bg.png) no-repeat bottom
-    background-size: cover
-    
+
+    // background: url(../assets/hero-bg.png) no-repeat bottom
+
     @media screen and (max-width: $small)
         padding: 130px 0 45px
 
-    &::after,
-    &::before
+    &::after
         display: block
         content: ""
 
         position: absolute
-
-        @media screen and (max-width: $small)
-            display: none
-
-    &::after
-        // background: url(../assets/top-right-shape.svg) no-repeat center center   
-        top: 0
-        right: 0 
-        width: 375px
-        height: 325px
-
-    &::before
-        // background: url(../assets/left-bottom-shape.svg) no-repeat center center
-        bottom: 0
         left: 0
-        width: 350px
-        height: 700px
+        right: -8%
+        bottom: 0
+        top: 0
+        z-index: -1
+
+        background: url(../assets/hero-bg.png) no-repeat center bottom
+        background-size: cover
+
 
     &-wrapper
         display: flex
