@@ -1,7 +1,8 @@
-# TODO
-- Fix testis arrow issues on hover
+To build:
+- npm run build
 
-- Fix error appearance on mobile phones
+To start:
+- npm run start
 
-- Optimize site
-- Deploy it ;)
+To preview:
+- npm run preview

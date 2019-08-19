@@ -34,31 +34,34 @@
         @media screen and (max-width: $small)
             right: 60px
 
+        &,
         &:focus,
         &:active,
         &:hover
-            background: url(/assets/arrow.svg) no-repeat center center
-            transform: rotate(180deg)
+            background: url(../assets/arrow-right.svg) no-repeat center center
 
         &:hover
-            transform: rotate(180deg) translateX(10px)
+            transform: translateX(-10px)
 
         &.slick-disabled
-            background: url(/assets/arrow-disabled.svg) no-repeat center center
-            transform: rotate(360deg)
+            background: url(../assets/arrow-disabled.svg) no-repeat center center
+            cursor: not-allowed
 
+            &:hover
+                transform: none
     &-next
+        &,
         &:focus,
         &:active,
         &:hover
-            background: url(/assets/arrow.svg) no-repeat center center
+            background: url(../assets/arrow.svg) no-repeat center center
 
         &:hover
             transform: translateX(10px)
 
         &.slick-disabled
-            background: url(/assets/arrow-disabled.svg) no-repeat center center
-            transform: rotate(180deg)
+            background: url(../assets/arrow-disabled-left.svg) no-repeat center center
+            cursor: not-allowed
 
             &:hover
-                transform: rotate(180deg) translateX(15px)
+                transform: none

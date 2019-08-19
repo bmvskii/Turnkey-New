@@ -9,12 +9,12 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
     plugins: [
-        /*
-        * Remove unused CSS
-        */
-        purgecss({
-            content: ['./**/*.html']
-        }),
+        // /* /*
+        // * Remove unused CSS
+        // */
+        // purgecss({
+        //     content: ['./**/*.html']
+        // }), */
         /*
         * Adds vendor prefixes to css attributes
         * https://github.com/postcss/autoprefixer
